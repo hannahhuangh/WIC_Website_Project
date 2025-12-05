@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UCSD College System Guide</title>
+
+
+  <style>
+    /* UCSD OFFICIAL COLORS */
+    :root {
+      --ucsd-blue: #00629B;
+      --ucsd-gold: #C69214;
+      --ucsd-navy: #182B49;
+      --ucsd-yellow: #FFCD00;
+      --light-bg: #f4f8fb;
+      --text-dark: #132238;
+    }
+
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--light-bg);
+      margin: 0;
+      padding: 0;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+
+    /* NAVBAR */
+    nav {
+      background: var(--ucsd-navy);
+      padding: 12px 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 22px;
+    }
+
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+
+    nav a:hover {
+      color: var(--ucsd-yellow);
+    }
+
+
+    /* HERO BANNER */
+    .hero {
+      width: 100%;
+      height: 380px;
+      background-image: url('https://live.staticflickr.com/4606/40469858891_ea1a4be37c_b.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: var(--ucsd-navy);
+      padding: 20px;
+    }
+
+
+    .hero-text {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 20px 35px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    display: inline-block;
+    }
+
+
+    .hero h1 {
+      font-size: 42px;
+      margin: 0;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin-top: 10px;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+
+
+    /* MAIN CONTENT */
+    .content {
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+
+    /* COLLEGE BUTTON GRID */
+    .college-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    }
+
+
+    .college-btn {
+      background: white;
+      border: 2px solid var(--ucsd-blue);
+      border-radius: 10px;
+      padding: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ucsd-blue);
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+      width: auto;
+    }
+
+
+    .college-btn:hover {
+      background: var(--ucsd-blue);
+      color: var(--ucsd-yellow);
+      border-color: var(--ucsd-gold);
+      transform: translateY(-4px);
+    }
+
+
+    /* FOOTER */
+    footer {
+      background: var(--ucsd-navy);
+      padding: 15px 0;
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>UCSD College System Guide</h1>
+    <p>A student-friendly overview of UCSD’s eight undergraduate colleges — themes, GE requirements, housing, dining, and more.</p>
+  </div>
+</section>
+
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+
+  <h2>Explore Each College</h2>
+  <p>Select a college to learn about its culture, academic requirements, and residential life.</p>
+
+
+  <div class="college-grid">
+    <a class="college-btn" href="revelle.html">Revelle</a>
+    <a class="college-btn" href="muir.html">Muir</a>
+    <a class="college-btn" href="marshall.html">Marshall</a>
+    <a class="college-btn" href="warren.html">Warren</a>
+    <a class="college-btn" href="ERC.html">Eleanor Roosevelt</a>
+    <a class="college-btn" href="sixth.html">Sixth</a>
+    <a class="college-btn" href="seventh.html">Seventh</a>
+    <a class="college-btn" href="eighth.html">Eighth</a>
+  </div>
+
+
+  <h2 style="margin-top:50px;">About This Project</h2>
+  <p>
+    This website helps UCSD students — especially first-years — understand the differences between the colleges and find the right academic and residential fit.
+  </p>
+
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+  <p>Made by Hannah Huang, Isabel Yang | UC San Diego</p>
+</footer>
+
+
+</body>
+</html>
